@@ -1,0 +1,27 @@
+SkillMatch/
+├── client/                     # Frontend files
+│   ├── public/                 # Public assets (index.html, images, etc.)
+│   ├── src/                    # React application source code
+│   │   ├── components/         # Reusable components
+│   │   ├── pages/              # Page-specific components (e.g., Login, Dashboard)
+│   │   ├── context/            # Context API or state management files
+│   │   ├── services/           # API service files for interacting with backend
+│   │   ├── App.js              # Main React component
+│   │   ├── index.js            # Entry point for React
+│   │   ├── styles/             # Global and component-specific styles
+│   │   ├── utils/              # Helper functions or constants
+│   └── package.json            # Frontend dependencies
+│
+├── server/                     # Backend files
+│   ├── config/                 # Configuration files (e.g., MongoDB connection)
+│   ├── controllers/            # Route logic (business logic for endpoints)
+│   ├── models/                 # Mongoose schemas
+│   ├── routes/                 # API routes
+│   ├── middleware/             # Middleware (e.g., authentication)
+│   ├── app.js                  # Express app setup
+│   ├── server.js               # Entry point for backend
+│   └── package.json            # Backend dependencies
+│
+├── .gitignore                  # Ignore unnecessary files in Git
+├── README.md                   # Documentation
+└── package.json                # Root-level meta dependencies (if any)
