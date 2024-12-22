@@ -1,0 +1,17 @@
+[33mcommit 200241c66e46070f09495b45b93508d76b035ff9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: shreedpathak <shreedpathaks@gmail.com>
+Date:   Tue Dec 17 19:03:13 2024 +0000
+
+    Day1_AddingUsersAPIs
+
+[33mcommit ec0a5c36dcf9347d501f42ffb7d387a1f95ec111[m
+Author: shreedpathak <shreedpathaks@gmail.com>
+Date:   Mon Dec 16 18:40:48 2024 +0000
+
+    Day0_ClientBoilerPlate
+
+[33mcommit 9ee9a5dca68743fd64d21e06567412d2b16f4b31[m
+Author: shreedpathak <shreedpathaks@gmail.com>
+Date:   Mon Dec 16 17:50:09 2024 +0000
+
+    Day0_Initialization

@@ -25,3 +25,5 @@ SkillMatch/
 ├── .gitignore                  # Ignore unnecessary files in Git
 ├── README.md                   # Documentation
 └── package.json                # Root-level meta dependencies (if any)
+
+
