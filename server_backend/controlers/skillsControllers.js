@@ -27,7 +27,21 @@ const addNewSkill = asyncHandler(async (req,res) => {
 
 
 const updateExistingSkill = asyncHandler(async (req, res)=>{
-    res.status(200).json(`This is updating existing skill API`);
+    const { id } = req.params;
+
+    const contact = await Skills.findById(id);
+    if (!contact) {
+        res.status(404);
+        throw new Error("Skill not found");
+    }
+    
+    const updatedSkill = await Skills.findByIdAndUpdate(
+        id,
+        req.body,
+        { new: true } // Return the updated document
+    );
+
+    res.status(200).json(updatedSkill);
 });
 
 export {getAllSkills, getSkillById, addNewSkill, updateExistingSkill};
