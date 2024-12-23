@@ -29,8 +29,8 @@ const addNewSkill = asyncHandler(async (req,res) => {
 const updateExistingSkill = asyncHandler(async (req, res)=>{
     const { id } = req.params;
 
-    const contact = await Skills.findById(id);
-    if (!contact) {
+    const skill = await Skills.findById(id);
+    if (!skill) {
         res.status(404);
         throw new Error("Skill not found");
     }
@@ -44,4 +44,18 @@ const updateExistingSkill = asyncHandler(async (req, res)=>{
     res.status(200).json(updatedSkill);
 });
 
-export {getAllSkills, getSkillById, addNewSkill, updateExistingSkill};
+
+const deleteExistingSkill = asyncHandler(async (req, res)=>{
+    const { id } = req.params;
+
+    const skill = await Skills.findById(id);
+    if (!skill) {   
+        res.status(404);
+        throw new Error("Skill not found");
+    }
+
+    await Skills.findByIdAndDelete(id);
+    res.status(200).json(updatedSkill);
+});
+
+export {getAllSkills, getSkillById, addNewSkill, updateExistingSkill, deleteExistingSkill};
